@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Big Bang Brawl</title>
+</head>
+
+<body>
+    <header>
+        <h1>Big Bang Brawl</h1>
+    </header>
+
+    <main class="game-container">
+        <p id="message">Choose an option:</p>
+        <div class="options">
+            <button onclick="play('rock')">Rock</button>
+            <button onclick="play('paper')">Paper</button>
+            <button onclick="play('scissors')">Scissors</button>
+            <button onclick="play('lizard')">Lizard</button>
+        </div>
+        <div class="level-info">
+            <p>Level: <span id="level">1</span></p>
+            <p>Attempts left: <span id="attempts">3</span></p>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div class="level-buttons">
+            <button class="easy" onclick="chooseLevel('easy')">Easy</button>
+            <button class="medium" onclick="chooseLevel('medium')">Medium</button>
+            <button class="hard" onclick="chooseLevel('hard')">Hard</button>
+        </div>
+    </main>
+
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>
